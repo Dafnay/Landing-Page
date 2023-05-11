@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Epilogue', sans-serif;
+}
+
+
+.logo {
+    width: 100px;
+    height: 100px;
+    padding: 0px;
+    margin-left: 7%;
+}
+
+.nav-bar {
+    display: flex;
+}
+
+.main-nav {
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width:100%;
+    list-style-type: none;
+    
+}
+
+.nav-bar .main-nav .main-nav__item{
+    display: inline-block;
+    justify-content: space-around;
+}
+
+.main-nav__item {
+    margin-right: 2%;
+    font-size: 1em;
+}
+
+ /* BANNER Y SLOGAN  */
+
+
+.banner {
+    background-image: url("../componentes/banner.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+    margin-top: 0.5%;
+    margin-bottom: 2%;
+
+    height: 350px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.slogan {
+    display: flex;
+    height: max-content;
+    color: white;
+    margin-bottom: 85px;
+    margin-right: 2%;
+    font-size: 50px;
+    
+}
+
+   
+/* LAS TARJETAS DE LOS MIEMBROS DEL EQUIPO */
+
+h3 {
+    font-size: 22px;
+    color: #696969;
+    
+}
+.user-card-container {
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    flex-wrap: wrap;
+}
+
+.card {
+    position: relative;
+    width: 260px;
+    min-height: 260px;
+    cursor: pointer;
+    color: white;
+    margin: 50px;
+    border-radius: 10px;
+    background: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
+}
+
+/* EMPIEZA EL EFECTO DE LAS TARJETAS */
+
+.card .img-frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+    overflow: hidden;
+    border: 2px solid white;
+    z-index: 2;
+    border-radius: 10px;
+
+}
+
+.card .img-frame img {
+    max-width: 100%;
+    height: 100%;
+}
+
+
+/* EFECTO CUANDO PONEMOS EL CURSOR POR ENCIMA DE LA TARJETA */
+
+.card:hover .img-frame {
+    top: 30%;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+
+/* PARTE DE ATRAS DE LAS TARJETAS CON LOS DETALLES Y LOS NOMBRES */
+
+.card .details{
+    position: absolute;
+    width: 100%;
+    bottom: 5%;
+    z-index: 1;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    letter-spacing: 1.5px;
+}
+
+.card .details p {
+    font-weight: 500;
+    margin-left: 5px;
+
+}
+/* HERRAMIENTAS UTILIZADAS EN EL PROYECTO */
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    margin-bottom: 3%;
+}
+    
+.logo-herramienta {
+    width: 60px;
+    height: auto;
+}
+
+/* FOOTER */
+
+.footer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    bottom: 0;
+    
+}
+.nombre{
+    margin-right: 2%;
+    font-size: 22px;
+}
+
+.icono-copy {
+    height: 20px;
+    width: 20px;
+    margin-bottom: 1%;
+}
